@@ -15,6 +15,10 @@ addons:
       - libstdc++-arm-none-eabi-newlib
       
 script:
+  - which cmake
+  - cmake --version
+  - which arm-none-eabi-gcc
+  - arm-none-eabi-gcc --version
   - mkdir -p build
   - cd build
   - cmake -DCMAKE_TOOLCHAIN_FILE=../external/LibreUCpp/toolchain-arm-none-eabi.cmake ..
