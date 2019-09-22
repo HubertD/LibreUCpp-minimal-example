@@ -2,8 +2,12 @@ language: cpp
 dist: bionic
 addons:
   apt:
+    sources:
+      - sourceline: 'deb https://apt.kitware.com/ubuntu/ bionic main'
+          key_url: 'https://apt.kitware.com/keys/kitware-archive-latest.asc'
+      - sourceline: 'ppa:team-gcc-arm-embedded/ppa'      
     packages:
-      - python3-pip
+      - cmake
       - ninja-build
       - gcc-arm-none-eabi
       - binutils-arm-none-eabi
@@ -11,7 +15,6 @@ addons:
       - libstdc++-arm-none-eabi-newlib
       
 script:
-  - pip3 install --user cmake
   - mkdir -p build
   - cd build
   - cmake -DCMAKE_TOOLCHAIN_FILE=../external/LibreUCpp/toolchain-arm-none-eabi.cmake ..
