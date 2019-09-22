@@ -11,6 +11,6 @@ addons:
 script:
   - mkdir -p build
   - cd build
-  - cmake -DCMAKE_TOOLCHAIN_FILE=../libs/LibreUCpp/toolchain-arm-none-eabi.cmake ..
+  - cmake -DCMAKE_TOOLCHAIN_FILE=../external/LibreUCpp/toolchain-arm-none-eabi.cmake ..
   - cmake --build .
   
