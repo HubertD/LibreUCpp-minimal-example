@@ -3,12 +3,12 @@ dist: bionic
 addons:
   apt:
     packages:
-      - gcc-arm-none-eabi
+      - python3-pip
       - ninja-build
-      - python-pip
+      - gcc-arm-none-eabi
       
 script:
-  - pip install cmake
+  - pip3 install --user cmake
   - mkdir -p build
   - cd build
   - cmake -DCMAKE_TOOLCHAIN_FILE=../external/LibreUCpp/toolchain-arm-none-eabi.cmake ..
