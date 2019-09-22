@@ -1,0 +1,15 @@
+language: cpp
+dist: bionic
+addons:
+  apt:
+    packages:
+      - gcc-arm-none-eabi
+      - cmake-data
+      - cmake
+      
+script:
+  - mkdir -p build
+  - cd build
+  - cmake -DCMAKE_TOOLCHAIN_FILE=../libs/LibreUCpp/toolchain-arm-none-eabi.cmake 
+  - cmake --build .
+  
