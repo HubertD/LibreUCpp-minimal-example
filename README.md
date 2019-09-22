@@ -29,7 +29,7 @@ Next, create a build environment, e.g.
 cd LibreUCpp-minimal-example
 mkdir build
 cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=../libs/LibreUCpp/toolchain-arm-none-eabi.cmake ..
+cmake -DCMAKE_TOOLCHAIN_FILE=../external/LibreUCpp/toolchain-arm-none-eabi.cmake ..
 ```
 
 ### Build it
