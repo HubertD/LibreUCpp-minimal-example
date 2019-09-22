@@ -1,7 +1,7 @@
 # LibreUCpp-minimal-example
 minimal project template for LibreUCpp projects
 
-[![Build Status](https://travis-ci.org/HubertD/LibreUCpp-minimal-example.png?branch=master)](https://travis-ci.org/HubertD/LibreUCpp-minimal-example)
+[![Build Status](https://travis-ci.org/LibreUCpp/LibreUCpp-minimal-example.png?branch=master)](https://travis-ci.org/LibreUCpp/LibreUCpp-minimal-example)
 
 ## Howto build
 
