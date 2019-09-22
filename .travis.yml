@@ -4,11 +4,11 @@ addons:
   apt:
     packages:
       - gcc-arm-none-eabi
-      - cmake-data
-      - cmake
       - ninja-build
+      - python-pip
       
 script:
+  - pip install cmake
   - mkdir -p build
   - cd build
   - cmake -DCMAKE_TOOLCHAIN_FILE=../external/LibreUCpp/toolchain-arm-none-eabi.cmake ..
